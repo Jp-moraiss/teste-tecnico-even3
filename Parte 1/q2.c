@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 void validador(char *email){
-    int i = 0;
-    int flag = 0;
+    int i = 0; // Variável que vai ser usada para iteração
+    int flag = 0; // Variável que vai servir como um booleano 
 
-    // Conta o tamanho da string 
+    // Laço até acabar a String
     while (email[i] != '\0'){
         if (email[i] == '@') flag = 1; // Se a string tiver um @, muda o valor da flag
         
@@ -23,9 +23,9 @@ void validador(char *email){
 
 int main(){
 
-    validador("jp@even3.com");
-    validador("jp");
-    validador("even3@");
+    validador("jp@even3.com"); // Email válido
+    validador("jp"); // Email inválido (Sem @ e sem .)
+    validador("even3@"); // Email inválido (Sem . depois do @)
 
     return 0;
 }
