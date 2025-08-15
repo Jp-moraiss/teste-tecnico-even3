@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+}
+
+@font-face {
+  font-family: Ubuntu-Regular;
+  src: url('../fonts/ubuntu/Ubuntu-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: Ubuntu-Bold;
+  src: url('../fonts/ubuntu/Ubuntu-Bold.ttf'); 
+}
+
+body {
+    font-family: Ubuntu-Bold, sans-serif;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 0; 
+    flex-direction: column;
+    gap: 30px;
+}
+
+#logo{
+    width: 20%;
+    margin-bottom: 10px;
+}
+
+#formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 350px;
+    border-radius: 20px;
+    height: 40vh;
+    box-shadow: 0px 1px 10px 0px;
+}
+
+input {
+    background: transparent;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin: 5px 0;
+    padding: 12px;
+    width: 250px;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    border-color: rgba(13,28,46,255);
+    box-shadow: 0 0 8px rgba(74, 144, 226, 0.6);
+}
+
+
+button {
+    color: white;
+    background-color: #4f4ea0;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s;
+    padding: 10px;
+    width: 50%;;
+}
+
+button:hover{
+    background-color: #312b4e;
+    color:white
+}
